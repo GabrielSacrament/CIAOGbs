@@ -1,0 +1,114 @@
+# ==========================================
+# CIAOGbs - .gitignore
+# Ambiente verificado: Windows / PowerShell / Git 2.53.0
+# Python acessado via launcher `py` (ex.: 3.14.6)
+# ==========================================
+
+
+# ---------- Ambiente virtual ----------
+.venv/
+venv/
+env/
+ENV/
+
+# ---------- Python - caches e bytecodes ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ---------- Python - pacotes e ferramentas ----------
+*.egg
+*.egg-info/
+build/
+dist/
+.eggs/
+pip-wheel-metadata/
+.installed.cfg
+
+# ---------- Python - ferramentas de teste e lint ----------
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.dmypy.json
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# ---------- Secrets e variaveis de ambiente ----------
+# O arquivo .env NUNCA deve ser versionado.
+.env
+.env.*
+!.env.example
+
+# ---------- Logs e arquivos temporarios ----------
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+
+# ---------- Sistema operacional ----------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ---------- Editores / IDEs ----------
+.idea/
+.vscode/
+*.code-workspace
+.history/
+
+# ---------- Midia gerada ou importada (video, audio, imagem) ----------
+# Cobre arquivos soltos em qualquer lugar do projeto.
+*.mp4
+*.m4v
+*.mov
+*.avi
+*.mkv
+*.webm
+*.wmv
+*.flv
+*.mpg
+*.mpeg
+*.ts
+*.m2ts
+*.3gp
+*.mp3
+*.wav
+*.aac
+*.flac
+*.ogg
+*.m4a
+*.opus
+*.wma
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.webp
+*.srt
+*.vtt
+*.ass
+
+# ---------- Pastas de trabalho do CIAOGbs ----------
+# Mantem apenas o marcador .gitkeep versionado,
+# para que a pasta exista no repositorio sem arquivos.
+
+input/*
+!input/.gitkeep
+
+output/*
+!output/.gitkeep
+
+temp/*
+!temp/.gitkeep

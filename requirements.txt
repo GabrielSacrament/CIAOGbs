@@ -1,0 +1,30 @@
+# ==========================================
+# CIAOGbs - requirements.txt
+# ==========================================
+#
+# FASE 0 (atual): este arquivo esta intencionalmente VAZIO.
+#
+# Motivo: a fundacao do projeto nao contem codigo Python que importe
+# bibliotecas de terceiros. Nao existe nenhuma dependencia de runtime,
+# de build ou de teste neste momento.
+#
+# REGRA DO PROJETO (ver AGENTS.md):
+#   - Nao instalar dependencias "por garantia" ou "para o futuro".
+#   - Toda dependencia entra junto com o primeiro uso real dela,
+#     na fase em que for necessaria.
+#   - Antes de adicionar qualquer linha aqui, explicar ao usuario
+#     por que a dependencia e necessaria NA FASE ATUAL.
+#
+# Historico de dependencias por fase:
+#   Fase 0 (fundacao) ....... nenhuma
+#   Fase 1 (FFmpeg) ......... nenhuma
+#   Fase 2+ ................. a definir
+#
+# NOTA DA FASE 1: o corte vertical precisou de duas ferramentas, e nenhuma
+# delas e dependencia pip:
+#   - FFmpeg  -> binario externo (gera o video)
+#   - FFprobe -> binario externo (le duracao e confere o resultado)
+# O codigo usa apenas a biblioteca padrao: argparse, subprocess, shutil,
+# re, pathlib e unittest nos testes. Nada a instalar.
+#
+# Ambiente de referencia: Windows / PowerShell, Python 3.14.6 (via `py`)
